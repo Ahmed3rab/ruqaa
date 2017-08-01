@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
+@import url('http://www.fontstatic.com/f=albayan');
+
+$font__main: 'albayan', Georgia, sans-serif;
+$font__headings: 'Aref Ruqaa', serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+$base-font-family: 'Lateef', cursive !default;
+$heading-font-family: 'Aref Ruqaa', serif;
+$base-font-weight: 400;
+$base-font-size: 21px;
+$base-line-height: $base-font-size * 1.5;

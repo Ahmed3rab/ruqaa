@@ -1,0 +1,79 @@
+.article
+	margin-bottom: 55px
+
+	a 
+		text-decoration: none
+
+	&__title
+		+font-size(2.06)
+		text-align: center
+		line-height: 42px
+		margin: 0
+		margin-bottom: 21px
+		font-weight: 500
+		color: darken($color-text, 100%)
+
+		a
+			color: darken($color-text, 100%)
+			text-decoration: none
+			+transition(color .2s ease-out)
+			
+			&:visited
+				color: darken($color-text, 100%)
+			
+			&:hover
+				text-decoration: underline
+	
+	&__category
+		+font-size(1.2)
+		display: block
+		text-align: center
+		text-transform: uppercase
+		color: $color-primary
+		font-weight: 400
+		margin-bottom: 7px
+
+		a
+			color: $color-primary
+			text-decoration: none
+			+transition(color .3s ease-out)
+
+			&:hover
+				color: black
+
+	&__moreLink
+		+font-size(1.2)
+		text-decoration: none
+		text-align: center
+		color: $color-primary
+		font-weight: bold
+		margin-top: 25px
+		+transition(color .3s ease-out)
+
+		&:hover
+			color: black
+
+	&__meta
+		+font-size(1)
+		color: lighten($color-text, 45%)
+		margin: auto
+		text-align: center
+
+	&__metaItem
+		&:after
+			content: "|"
+			padding: 0 5px
+
+		&:last-child:after
+			content: ""
+			margin-right: 0px
+
+		a 
+			color: inherit
+
+	&__content 
+		line-height: $base-font-size * 1.9
+		text-align: justify
+
+	&__footer 
+		text-align: center

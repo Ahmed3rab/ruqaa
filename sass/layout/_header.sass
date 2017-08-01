@@ -1,0 +1,40 @@
+header
+	margin-bottom: 60px
+
+	.logo
+		text-align: center
+		margin-top: 50px
+
+		h1
+			margin-bottom: 5px
+			line-height: 1
+
+		a
+			+font-size(2.5)
+			font-weight: 100
+			color: darken($color-text, 100%)
+			text-decoration: none
+
+		span 
+			+font-size(1)
+			color: lighten($color-text, 30%)
+
+	.utils
+		float: right
+		margin-top: -29px
+		// display: none 
+
+		li
+			+font-size(1)
+			display: inline-block
+			margin-right: 5px
+			font-weight: 500
+			text-transform: uppercase
+
+			&:after
+				content: "|"
+				padding-left: 5px
+
+			&:last-child:after
+				content: ""
+				margin-right: 0px
