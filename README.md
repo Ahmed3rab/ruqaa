@@ -13,4 +13,4 @@ If you discover a security vulnerability within Ruqaa, please send an e-mail to 
 
 License
 ---
-Ruqaa is open-sourced software licensed under the GNU GPL license.
+Ruqaa is open-sourced Wordpress theme licensed under the GNU GPL license.
