@@ -457,6 +457,41 @@ table {
   font-size: 1.2rem;
   border: none; }
 
+.navigation {
+  padding: 5px 15px;
+  margin-top: 25px;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  position: relative;
+  min-height: 40px; }
+  .navigation ul {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    margin: 0px; }
+  .navigation li {
+    display: inline-block;
+    margin-left: 10px; }
+    .navigation li:after {
+      content: "|";
+      padding-right: 10px;
+      color: #eee; }
+    .navigation li:last-child:after {
+      content: ""; }
+    .navigation li a {
+      text-decoration: none;
+      color: #666; }
+
+@media (max-width: 767px) {
+  .navigation ul {
+    position: relative;
+    left: 0;
+    transform: translatex(0%);
+    margin: 0px; } }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/

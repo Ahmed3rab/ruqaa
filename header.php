@@ -26,37 +26,41 @@
 
 	<header id="masthead" class="site-header">
 		<div class="container">
-			<div class="logo">
-				<?php
-					the_custom_logo();
-					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php else : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<div class="row">
+				<div class="logo">
 					<?php
-					endif;
-				?>
-			
-				<?php
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<span class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></span>
-					<?php
-					endif; 
-				?>
+						the_custom_logo();
+						if ( is_front_page() && is_home() ) : ?>
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php else : ?>
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php
+						endif;
+					?>
 				
-			</div><!-- End Logo -->
+					<?php
+						$description = get_bloginfo( 'description', 'display' );
+						if ( $description || is_customize_preview() ) : ?>
+							<span class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></span>
+						<?php
+						endif; 
+					?>
+					
+				</div><!-- End Logo -->
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<nav id="site-navigation" class="navigation">
+						<?php
+							wp_nav_menu( array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'primary-menu',
+							) );
+						?>
+					</nav> <!-- #site-navigation -->
+				</div>
+			</div>
 		</div><!-- End container -->
-
-		<!-- <nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ruqaa' ); ?></button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav> --><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="container">
