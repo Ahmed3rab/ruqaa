@@ -241,7 +241,8 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Aref Ruqaa", serif; }
+  font-family: "Aref Ruqaa", serif;
+  margin-bottom: 15px; }
 
 p {
   margin-bottom: 1em; }
@@ -310,7 +311,7 @@ hr {
   margin-bottom: 1.5em; }
 
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0 1.5em 1.5em 0em; }
 
 ul {
   list-style: disc; }
